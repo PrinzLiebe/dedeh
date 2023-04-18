@@ -1,0 +1,122 @@
+@font-face {
+    font-family: 'beautiful';
+    src: url('fonts/Beauty.otf') format('opentype');
+}
+@font-face {
+    font-family: 'girlfriend';
+    src: url('fonts/Filxgirl.TTF') format('truetype');
+}
+@font-face {
+    font-family: 'birthday';
+    src: url('fonts/KGChasingCars.ttf') format('truetype');
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+}
+
+.container{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main{
+    flex: 1 0 auto;
+    background: black url('imgs/luzes.jpg') no-repeat center center/cover fixed;
+    font-family: 'beautiful';
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{ 
+    background-color: black;
+    font-size: 3rem;
+    font-family: 'birthday';
+    color: #a02d31;
+}
+
+.presentMode{
+    width: 75%;
+    height: 50vh;
+    background: black url('imgs/brinde1.jpg') no-repeat center center/cover;
+    padding: .5rem;
+    border: .1rem solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.surpriseMode{
+    width: 75%;
+    height: 80vh;
+    background: black url('imgs/dedeh2.png') no-repeat center center/cover;
+    padding: .5rem;
+    border: .1rem solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.shadowBox{
+    background-color: rgba(0, 0, 0, 0.322);
+    color: white;
+    padding: .1rem;
+    border-radius: .5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem
+}
+
+h2{
+    font-size: 1.7rem;
+    font-family: 'beautiful';
+}
+
+h3{
+    font-size: 2rem;
+}
+
+#present{
+    width: 3rem;
+    font-size: 2rem;
+    background-color: transparent;
+    border: none;
+}
+
+#paragContainer{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.parag{
+    font-size: 1.6rem;
+    font-family: 'girlfriend';
+    line-height: 1.3rem;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+@media (max-width: 387px) {
+    *{
+     font-size: 17px;   
+    }
+    .parag{
+        font-size: 1.7rem;
+        line-height: 1.5rem;
+    }
+}
